@@ -2,6 +2,10 @@
   "name": "my-typescript-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.15.2",
+    "npm": "6.4.1"
+  },
   "dependencies": {
     "@atlaskit/banner": "10.1.8",
     "@atlaskit/icon": "20.1.1",
