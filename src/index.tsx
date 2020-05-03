@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // @ts-ignore
 import Button from '@inmanishy/button-component';
 import './index.css';
-import App from './App';
+import App from './components/App';
 
 import * as serviceWorker from './serviceWorker';
 
