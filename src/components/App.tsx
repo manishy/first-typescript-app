@@ -2,24 +2,8 @@ import React, { useState } from 'react';
 import '../App.css';
 import Todo from './ToDo';
 import ToDoForm from './TodoForm'
-import UploadIcon from "./UploadIcon";
 import CustomUpload from "./CustomUpload";
 
-
-// const CustomUpload =(): any =>{
-//   return (<div className={"file-upload"}>
-//     <input type="file" id={"upload-1"} name={"name"} className={"custom-upload"}
-//         // accept={mediaFileFormats.split(',').map(x => `.${x}`).join(', ')}
-//         // style={{ display: 'none' }}
-//         // onChange={this.onFileSelect}
-//     />
-//     <UploadIcon
-//         className={"Icon"}
-//         style={{ fill: "green", borderColor: "black" }}
-//     />
-//     {/*<label className="custom-file-label" >Choose file</label>*/}
-//   </div>);
-// }
 
 const App = (): any => {
   const [toDos, setTodos] = useState([
@@ -44,7 +28,9 @@ const App = (): any => {
 
   return (
       <div className="app">
-        <div>
+        <div
+            // className={"custom-upload"}
+        >
           <CustomUpload/>
         </div>
         <div className="todo-list">

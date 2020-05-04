@@ -1,6 +1,16 @@
 import React, {useState} from "react";
 import UploadIcon from "./UploadIcon";
 
+
+type ImagePreviewPropTypes = {
+    "blobUrl": string
+}
+const ImagePreview = ({blobUrl}: ImagePreviewPropTypes): any => {
+    return (<div className={"image-preview"}>
+        <img src={blobUrl} alt="No Image Selected" width="300" height="300"/>
+    </div>);
+}
+
 const CustomUpload = () => {
     const [image, setImage] = useState({preview: "", raw: ""});
 
@@ -30,29 +40,29 @@ const CustomUpload = () => {
     };
 
     return (
-        <div
-            // className={"file-upload"}
-        >
-            <label htmlFor="upload-button">
-                {image.preview ? (
-                    <img src={image.preview} alt="dummy" width="300" height="300"/>
-                ) : (
+        <div>
+            <div>
+                {image.preview && <ImagePreview blobUrl={image.preview}/>}
+            </div>
+            <div className={"file-upload"}>
+                <label htmlFor="upload-button">
                     <div>
                         <UploadIcon
-                            className={"Icon"}
-                            style={{ fill: "green", borderColor: "black" }}
+                            className={"icon"}
+                            style={{fill: "green", borderColor: "black"}}
                         />
                     </div>
-                )}
-            </label>
+                    <h5 className="text-center">Upload Your Photo</h5>
+                </label>
+            </div>
 
             <input
                 type="file"
                 id="upload-button"
                 style={{display: "none"}}
                 onChange={handleChange}
+                accept={".jpeg,.png"}
             />
-            <h5 className="text-center">Upload your photo</h5>
 
             <br/>
             {/*<button onClick={handleUpload}>Upload</button>*/}
