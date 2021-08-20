@@ -1,21 +1,14 @@
-import React from 'react';
-
+import React from "react";
 
 type ToDoProps = {
-    index: number,
-    todo: {
-        text: string
-    }
+  index: number;
+  todo: {
+    text: string;
+  };
 };
 
 const Todo = ({ index, todo }: ToDoProps) => {
-    return (
-        <div className="todo">
-            {todo.text}
-        </div>
-    );
+  return <div className="todo">{todo.text}</div>;
 };
-
-
 
 export default Todo;
