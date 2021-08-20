@@ -1,32 +1,23 @@
 .app {
-  position: relative;
   background: #209cee;
   padding: 60px;
-  width: 110vh;
-  left: 50vh;
   margin-top: 10px;
   border-radius: 10px;
 }
 
 .todo-list {
   position: relative;
-  left: 1000px;
-  background: #e8eee8;
   border-radius: 10px;
-  padding: 5px;
-  max-width: 400px;
-  position: relative;
-  left: 60vh;
-  /*bottom: 10vh;*/
   height: auto;
-  /*width: 50vh;*/
+  text-align: center;
 }
 
 .todo{
   background: #fff;
   border-radius: 30px;
   font-size: 25px;
-  margin: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   height: 50px;
   font-weight: bold;
   text-align: center;
@@ -35,27 +26,4 @@
   width: 40vh;
 }
 
-
-.file-upload{
-  position: relative;
-  background: #fff;
-  border-radius: 30px;
-  height: 50px;
-  padding: 25px 20px 5px 10px;
-  width: 4rem;
-  top: 15rem;
-}
-
-/*.image-preview{*/
-  /*float: left;*/
-/*}*/
-
-.custom-upload{
-  float: left;
-}
-
-.icon{
-  position: relative;
-  left: 10vh;
-}
 /*trbl*/

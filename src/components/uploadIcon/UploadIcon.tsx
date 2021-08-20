@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../UploadIcon.css';
+import './uploadIcon.scss';
 
 const UploadIcon = ({style}: any) => (<svg style={style} version="1.1" className="upload-icon" x="0px" y="0px"
   viewBox="0 0 475.078 475.077">

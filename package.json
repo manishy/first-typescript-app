@@ -7,9 +7,6 @@
     "npm": "6.4.1"
   },
   "dependencies": {
-    "@atlaskit/banner": "10.1.8",
-    "@atlaskit/icon": "20.1.1",
-    "@inmanishy/button-component": "0.0.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -24,6 +21,10 @@
     "react-scripts": "3.4.1",
     "styled-components": "5.1.0",
     "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

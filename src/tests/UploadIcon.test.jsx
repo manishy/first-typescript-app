@@ -1,5 +1,5 @@
 import React from 'react';
-import UploadIcon from '../components/UploadIcon';
+import UploadIcon from '../components/uploadIcon/UploadIcon';
 
 describe.only('dynamicFormPortal > icons > UploadIcon', () => {
   let wrapper;
