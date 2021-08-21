@@ -1,13 +1,12 @@
 import React from "react";
 
 type ToDoProps = {
-  index: number;
   todo: {
     text: string;
   };
 };
 
-const Todo = ({ index, todo }: ToDoProps) => {
+const Todo = ({ todo }: ToDoProps) => {
   return <div className="todo">{todo.text}</div>;
 };
 

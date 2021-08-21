@@ -48,9 +48,7 @@ const CustomUpload = () => {
     <div>
       <div className={"file-upload"}>
         <label htmlFor="upload-button">
-          <div>
-            <div>{<ImagePreview blobUrl={imageToShow} />}</div>
-          </div>
+          {<ImagePreview blobUrl={imageToShow} />}
         </label>
       </div>
 

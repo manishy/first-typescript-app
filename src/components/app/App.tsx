@@ -31,7 +31,7 @@ const App = (): any => {
       <CustomUpload />
       <span className="todo-list">
         {toDos.map((todo, index) => (
-          <Todo key={index} index={index} todo={todo} />))}
+          <Todo key={index} todo={todo} />))}
         <ToDoForm addTodo={addTodo} />
       </span>
     </div>
