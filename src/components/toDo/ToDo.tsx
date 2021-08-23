@@ -1,4 +1,5 @@
 import React from "react";
+import './toDo.scss';
 
 type ToDoProps = {
   todo: {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './app.scss';
-import Todo from '../ToDo';
+import Todo from '../toDo';
 import ToDoForm from '../TodoForm'
 import CustomUpload from "../customUpload";
 
@@ -29,11 +29,11 @@ const App = (): any => {
   return (
     <div className="app">
       <CustomUpload />
-      <span className="todo-list">
+      <div className="todo-list">
         {toDos.map((todo, index) => (
           <Todo key={index} todo={todo} />))}
         <ToDoForm addTodo={addTodo} />
-      </span>
+      </div>
     </div>
   );
 };

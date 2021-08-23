@@ -1,29 +1,21 @@
 .app {
-  background: #209cee;
+  background: pink;
   padding: 60px;
   margin-top: 10px;
   border-radius: 10px;
 }
 
 .todo-list {
+  background: repeating-radial-gradient(black, transparent 100px);
   position: relative;
   border-radius: 10px;
-  height: auto;
   text-align: center;
-}
-
-.todo{
-  background: #fff;
-  border-radius: 30px;
-  font-size: 25px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  height: 50px;
-  font-weight: bold;
-  text-align: center;
-  padding: 25px 20px 5px 10px;
-  overflow: auto;
-  width: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*trbl*/
